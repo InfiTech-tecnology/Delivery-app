@@ -4,14 +4,15 @@
 
 .testimoniales {
     padding: v.$separacion 0;
-
-
     &__heading {
         text-align: center;
     }
     &__grid {
         @include m.tablet {
-            @include m.grid(5, 2rem);
+            @include m.grid(3, 2rem);
+        }
+        @include m.desktop {
+            @include m.grid(7, 2rem);
         }
     }
 }
